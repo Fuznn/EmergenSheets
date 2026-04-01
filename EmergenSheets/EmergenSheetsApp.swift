@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct EmergenSheetsApp: App {
+    @StateObject var hymnStore = HymnStore()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(hymnStore)
         }
     }
 }

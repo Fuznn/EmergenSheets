@@ -10,6 +10,7 @@ import PDFKit
 
 struct PDFPageRepresentable: UIViewRepresentable {
     let url: URL
+    let pageIndex: Int
 
     func makeUIView(context: Context) -> PDFView {
         let pdfView = PDFView()
@@ -20,5 +21,9 @@ struct PDFPageRepresentable: UIViewRepresentable {
         return pdfView
     }
 
-    func updateUIView(_ uiView: PDFView, context: Context) {}
+    func updateUIView(_ uiView: PDFView, context: Context) {
+        if let document = uiView.document, let page = document.page(at: pageIndex) {
+            uiView.go(to: page)
+        }
+    }
 }
