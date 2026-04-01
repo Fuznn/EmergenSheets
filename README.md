@@ -6,3 +6,7 @@ files in order for them to be easily readable on a small screen. It is hands fre
 
 I know this app concept exists, but I had planned machine vision for this in order for setup to be minimal, all
 hopefully handled automatically by machine vision stuff.
+
+<img width="256" height="256" alt="emergensheet icon revised (1)" src="https://github.com/user-attachments/assets/3133cc8f-0585-457b-988b-2ee657ca2981" />
+
+(I was really proud of this icon haha.)
